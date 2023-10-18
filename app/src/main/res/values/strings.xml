@@ -11,4 +11,9 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    //
+    <string name="text_help">Click vào nút xem tiếp để đén vị trí đọc lần cuối</string>\
+    <string name="text_continue">XEM TIẾP</string>\
+    <string name="text_category">MỤC LỤC</string>
 </resources>
