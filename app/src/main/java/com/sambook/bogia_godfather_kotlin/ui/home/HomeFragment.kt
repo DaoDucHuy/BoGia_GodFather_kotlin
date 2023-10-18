@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.sambook.bogia_godfather_kotlin.databinding.FragmentHomeBinding
@@ -28,7 +30,15 @@ class HomeFragment : Fragment() {
 //        homeViewModel.text.observe(viewLifecycleOwner) {
 //            textView.text = it
 //        }
+        val btnContinue : Button = binding.btnContinue
+        btnContinue.setOnClickListener {
+            clickContinue()
+        }
         return root
+    }
+
+    private fun clickContinue() {
+        Toast.makeText(context, "Continue", Toast.LENGTH_SHORT).show()
     }
 
     override fun onDestroyView() {
