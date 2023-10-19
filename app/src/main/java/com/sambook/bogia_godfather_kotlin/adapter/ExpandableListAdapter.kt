@@ -10,13 +10,13 @@ import android.widget.TextView
 import com.sambook.bogia_godfather_kotlin.R
 
 
-class ExpandableListAdapter(_context: Context, _listDataHeader : List<String>, _listChildData : List<String>) : BaseExpandableListAdapter() {
+class ExpandableListAdapter(_context: Context?, _listDataHeader: List<String>, _listChildData: HashMap<String, List<String>>) : BaseExpandableListAdapter() {
 
-    private val _context: Context? = null
-    private val _listDataHeader: List<String>? = null // header titles
+    private val _context: Context? = _context
+    private val _listDataHeader: List<String>? = _listDataHeader // header titles
 
     // child data in format of header title, child title
-    private var _listDataChild: HashMap<String?, MutableList<String?>?>? = null
+    private var _listDataChild: HashMap<String, List<String>> = _listChildData
 
     override fun getGroupCount(): Int {
         return this._listDataHeader?.size ?: 0
