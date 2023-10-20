@@ -48,7 +48,7 @@ class HomeFragment : Fragment() {
         Log.i(TAG, listDataHeader.toString())
 
 //        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
+//        homeViewModel.text.observe(viewLifecycleOwner) {`
 //            textView.text = it
 //        }
         init()
