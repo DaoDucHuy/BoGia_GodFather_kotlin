@@ -1,5 +1,6 @@
 package com.sambook.bogia_godfather_kotlin.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,8 +12,11 @@ import android.widget.Toast
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.sambook.bogia_godfather_kotlin.PDFViewActivity
 import com.sambook.bogia_godfather_kotlin.adapter.ExpandableListAdapter
 import com.sambook.bogia_godfather_kotlin.databinding.FragmentHomeBinding
+import java.io.File
+import java.io.InputStream
 
 
 class HomeFragment : Fragment() {
@@ -63,10 +67,10 @@ class HomeFragment : Fragment() {
 
         expListView!!.setOnChildClickListener { parent, v, groupPosition, childPosition, id ->
             Toast.makeText(context, listDataHeader[groupPosition] + " : " + listDataChild[listDataHeader[groupPosition]]!![childPosition], Toast.LENGTH_SHORT).show()
-//            val intent = Intent(context, SplashActivity::class.java)
-//            intent.putExtra("HEAD", groupPosition)
-//            intent.putExtra("CHAPTER", childPosition)
-//            startActivity(intent)
+            val intent = Intent(context, PDFViewActivity::class.java)
+            intent.putExtra("HEAD", groupPosition)
+            intent.putExtra("CHAPTER", childPosition)
+            startActivity(intent)
             false
         }
     }
@@ -81,7 +85,16 @@ class HomeFragment : Fragment() {
     }
 
     private fun clickContinue() {
-        Toast.makeText(context, "Continue", Toast.LENGTH_SHORT).show()
+        try {
+//            val continuePage = File("pagecontinue.txt").readText()
+//            val intent = Intent(context, PDFViewActivity::class.java)
+//            intent.putExtra("PAGECONTINUE", continuePage)
+//            startActivity(intent)
+//            Toast.makeText(context, "Trang: $continuePage", Toast.LENGTH_SHORT).show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(context, "Bạn chưa đọc trang nào", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onDestroyView() {
