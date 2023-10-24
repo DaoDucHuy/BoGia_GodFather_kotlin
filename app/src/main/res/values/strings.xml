@@ -16,4 +16,5 @@
     <string name="text_help">Click vào nút xem tiếp để đén vị trí đọc lần cuối</string>\
     <string name="text_continue">XEM TIẾP</string>\
     <string name="text_category">MỤC LỤC</string>
+    <string name="text_continue_toast">Bạn chưa đọc trang nào</string>
 </resources>

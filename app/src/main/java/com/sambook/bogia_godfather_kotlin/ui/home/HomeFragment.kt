@@ -13,10 +13,10 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.sambook.bogia_godfather_kotlin.PDFViewActivity
+import com.sambook.bogia_godfather_kotlin.R
 import com.sambook.bogia_godfather_kotlin.adapter.ExpandableListAdapter
 import com.sambook.bogia_godfather_kotlin.databinding.FragmentHomeBinding
 import java.io.File
-import java.io.InputStream
 
 
 class HomeFragment : Fragment() {
@@ -86,14 +86,16 @@ class HomeFragment : Fragment() {
 
     private fun clickContinue() {
         try {
-//            val continuePage = File("pagecontinue.txt").readText()
-//            val intent = Intent(context, PDFViewActivity::class.java)
-//            intent.putExtra("PAGECONTINUE", continuePage)
-//            startActivity(intent)
-//            Toast.makeText(context, "Trang: $continuePage", Toast.LENGTH_SHORT).show()
+            val file = File(context?.filesDir, "CONTINUE.txt")
+            val contents = file.readText().toString() // Read file
+            Log.i("PAGE", contents)
+
+            val intent = Intent(context, PDFViewActivity::class.java)
+            intent.putExtra( "PAGECONTINUE", contents)
+            startActivity(intent)
         } catch (e: Exception) {
             e.printStackTrace()
-            Toast.makeText(context, "Bạn chưa đọc trang nào", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, R.string.text_continue_toast, Toast.LENGTH_SHORT).show()
         }
     }
 
