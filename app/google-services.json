@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "974419982321",
+    "firebase_url": "https://godfatherbogia-32ff1.firebaseio.com",
+    "project_id": "godfatherbogia-32ff1",
+    "storage_bucket": "godfatherbogia-32ff1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974419982321:android:f745eddf973703cf53b650",
+        "android_client_info": {
+          "package_name": "com.sambook.bogia_godfather_kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974419982321-o3093b364sg3vn3dkvcjl88sbgojjks4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEU1XlU8rAl0toYxXvX3Z1KwNV4zfw21U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974419982321-o3093b364sg3vn3dkvcjl88sbgojjks4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974419982321:android:7e3b88c35cf4f7c653b650",
+        "android_client_info": {
+          "package_name": "com.sambook.godfather_bogia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974419982321-llb0b281f4in861msknrctbgk61th2tp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sambook.godfather_bogia",
+            "certificate_hash": "9f4dce3198abd204d0699948aa6b115090c6114a"
+          }
+        },
+        {
+          "client_id": "974419982321-sfhgrval4i123ef9pg98kqj2vovtc9ub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sambook.godfather_bogia",
+            "certificate_hash": "109f7eb94cf6884a63f91f6c1b1abbe7c7b8048b"
+          }
+        },
+        {
+          "client_id": "974419982321-srh184rdn56937g5grepldadf0tdjdm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sambook.godfather_bogia",
+            "certificate_hash": "901bcbca204214e3e8ac5f1a7d0555c32b5fdb58"
+          }
+        },
+        {
+          "client_id": "974419982321-o3093b364sg3vn3dkvcjl88sbgojjks4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEU1XlU8rAl0toYxXvX3Z1KwNV4zfw21U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974419982321-o3093b364sg3vn3dkvcjl88sbgojjks4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
