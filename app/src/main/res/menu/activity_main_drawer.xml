@@ -11,16 +11,16 @@
 
     </group>
 
-    <item android:title="Khác">
-        <menu>
-            <item
-                android:id="@+id/nav_gallery"
-                android:icon="@drawable/ic_star_border_black_24dp"
-                android:title="Đánh Giá Ứng Dụng" />
-            <item
-                android:id="@+id/nav_slideshow"
-                android:icon="@drawable/ic_local_grocery_store_black_24dp"
-                android:title="Ứng Dụng Khác" />
-        </menu>
-    </item>
+<!--    <item android:title="Khác">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/nav_gallery"-->
+<!--                android:icon="@drawable/ic_star_border_black_24dp"-->
+<!--                android:title="Đánh Giá Ứng Dụng" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_slideshow"-->
+<!--                android:icon="@drawable/ic_local_grocery_store_black_24dp"-->
+<!--                android:title="Ứng Dụng Khác" />-->
+<!--        </menu>-->
+<!--    </item>-->
 </menu>
