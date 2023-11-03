@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BoGia_GodFather_kotlin</string>
+    <string name="app_name">The GodFather</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -17,4 +17,6 @@
     <string name="text_continue">XEM TIẾP</string>\
     <string name="text_category">MỤC LỤC</string>
     <string name="text_continue_toast">Bạn chưa đọc trang nào</string>
+
+    <string name="other_funtion">Chúc bạn đọc sách thật vui!</string>
 </resources>
